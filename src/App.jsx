@@ -29,8 +29,8 @@ import { EnquiryContext } from "./components/EnquiryContext";
 import Navbar from "./pages/Navbar";
 import Sidebar from "./pages/Sidebar";
 import EnquiryForm from "./components/EnquiryForm";
-import EnquiryDetails from "./components/EnquiryDetails";
-import Home from "./pages/Home";
+// import EnquiryDetails from "./components/EnquiryDetails";
+import Home from "./pages/Dashboard";
 
 function App() {
   const [enquiries, setEnquiries] = useState([]);
@@ -47,7 +47,7 @@ function App() {
             <div className="p-4 mt-16 overflow-auto h-[calc(100vh-4rem)]">
               <Routes>
                 <Route path="/enquiry-form" element={<EnquiryForm />} />
-                <Route path="/enquiry-details" element={<EnquiryDetails />} />
+                {/* <Route path="/enquiry-details" element={<EnquiryDetails />} /> */}
                 <Route path="/" element={<Home/>} />
               </Routes>
             </div>
